@@ -79,4 +79,5 @@
 
 #app-right-convo {
     height: calc( 100% - 6rem);
+    overflow-y: scroll;
 }
