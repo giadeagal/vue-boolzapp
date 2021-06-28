@@ -22,7 +22,6 @@
 #app {
     height: 95vh;
     width:80%;
-    margin:auto;
     background-color: #fff;
     position:absolute;
     top:2.5vh;
@@ -30,4 +29,35 @@
     left: 10%;
     right:10%;
     z-index: 1;
+}
+
+#app-left {
+    width:300px;
+    height: 100%;
+    background-color: teal;
+}
+
+#app-left-user {
+    background-color: red;
+    padding:.5rem .8rem;
+    min-height: 3rem;
+    max-height: 3rem;
+}
+
+#app-left-unmute {
+    background-color: pink;
+    min-height: 3rem;
+    max-height: 3rem;
+}
+
+#app-left-search {
+    background-color:powderblue;
+    min-height: 3rem;
+    max-height: 3rem;
+}
+
+#app-left-contacts {
+    height: calc(100% - 9rem);
+    background-color: purple;
+    overflow-y:scroll;
 }
