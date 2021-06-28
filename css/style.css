@@ -34,7 +34,7 @@
 #app-left {
     width:300px;
     height: 100%;
-    background-color: teal;
+    float:left;
 }
 
 #app-left-user {
@@ -60,4 +60,23 @@
     height: calc(100% - 9rem);
     background-color: purple;
     overflow-y:scroll;
+}
+
+#app-right {
+    width:calc(100% - 300px);
+    height: 100%;
+    background-color: teal;
+    float: right;
+}
+
+#app-right-target,
+#app-right-text{
+    min-height: 3rem;
+    max-height: 3rem;
+    background-color: black;
+}
+
+
+#app-right-convo {
+    height: calc( 100% - 6rem);
 }
