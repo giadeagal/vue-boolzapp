@@ -22,10 +22,13 @@
         <div id="app-left">
             <div id="app-left-user">
                <div>
-                <i class="fas fa-circle-notch"></i>
+                <img src="img/mario-draghi-1.jpg" alt="Mario Draghi">
+                <span>Mario</span>
                </div>
                <div>
                 <i class="fas fa-circle-notch"></i>
+                <i class="fas fa-comment-alt"></i>
+                <i class="fas fa-ellipsis-v"></i>
                </div>
             </div>
             <div id="app-left-unmute">
@@ -41,35 +44,27 @@
             </div>
             <div id="app-left-contacts">
                 <ul>
-                    <li>
-                        <img src="img/Angela_Merkel_2019_cropped.jpg" alt="Angela Merkel">
-                        <span>Angela</span>
-                    </li>
-                    <li>
-                        <img src="img/mario-draghi-1.jpg" alt="Mario Draghi">
-                        <span>Mario</span>
-                    </li>
-                    <li>
-                        <img src="img/Charles_Michel_(49467991288).jpg" alt="Charles Michel">
-                        <span>Charles</span>
-                    </li>
-                    <li>
-                        <img src="img/Xavier_Bettel,_2017.jpg" alt="Xavier bettel">
-                        <span>Xavier</span>
-                    </li>
-                    <li>
-                        <img src="img/Emmanuel_Macron_(cropped).jpg" alt="Emmanuel Macron">
-                        <span>Emmanuel</span>
-                    </li>
-                    <li>
-                        <img src="img/Mark_Rutte,_2017.jpg" alt="Mark Rutte">
-                        <span>Mark</span>
+                    <li v-for="(contact,i) in contacts" @click="selectTarget(contact)">
+                        <img :src="contact.avatar" :alt="contact.name">
+                        <span>{{contact.name}}</span>
                     </li>
                 </ul>
             </div>
         </div>
         <div id="app-right">
-            <div id="app-right-target"></div>
+            <div id="app-right-target">
+                <div>
+                    <img :src="target.avatar" :alt="target.name">
+                    <span>{{target.name}} <br>
+                        <span>Ultimo accesso alle</span>
+                    </span>
+                </div>
+                <div>
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+             </div>
             <div id="app-right-convo">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad atque tenetur nulla adipisci officiis temporibus quasi nisi dolorum quos animi non, ducimus perspiciatis facere laborum commodi nesciunt dicta illum voluptate at cumque alias provident aut. Laboriosam vel quaerat eos, aspernatur ipsa, rerum quas reprehenderit blanditiis nemo dolorum ipsum sed numquam? Ullam, et? Quam temporibus fugiat, omnis sunt qui repellat magni atque provident voluptates sint praesentium, tempore tempora incidunt necessitatibus molestiae facere labore non doloribus repudiandae aspernatur ratione? Corporis ratione perspiciatis eum deleniti modi sint saepe at voluptatum cupiditate nesciunt incidunt doloremque, perferendis architecto quod rem accusamus unde, iste aspernatur debitis porro? Alias soluta repudiandae repellendus eveniet eos molestiae necessitatibus. Distinctio quo provident perspiciatis sed excepturi voluptatibus beatae vitae, tempora vel harum nobis. Laudantium, quis tenetur. Nisi doloribus error eum ex quibusdam deleniti consequatur nulla inventore quisquam dolore eveniet laboriosam, ratione esse, quasi magnam atque ullam ipsa perferendis. Corrupti omnis ullam vel architecto ad placeat optio libero perspiciatis similique, mollitia esse magni, quas recusandae et excepturi assumenda earum necessitatibus quae minus tempora officiis! Sunt, voluptas pariatur ducimus distinctio ab quae explicabo facilis nemo fugit impedit consectetur, unde natus incidunt, provident at reiciendis dolorem nihil ipsum laborum quo tempore praesentium! Aut ea, doloribus facere est enim libero quidem veniam hic soluta cum provident aliquam molestias. Perspiciatis qui nisi consectetur doloribus, aliquam ipsa ad incidunt dignissimos quis, eos quisquam ab consequatur expedita alias quo, aspernatur nemo nobis possimus velit nulla? Necessitatibus unde tempora esse assumenda, temporibus ex. Aut culpa cupiditate, inventore nostrum dignissimos tenetur id! Assumenda, necessitatibus. Enim similique cumque atque voluptate iste unde illo perferendis! Aperiam sequi velit molestias iure, sed quod facilis reiciendis reprehenderit enim autem, voluptate alias optio cupiditate illo deserunt! Impedit saepe, sequi fugit cumque aliquid quis illum veritatis nam autem laborum quibusdam debitis, repellat ratione asperiores repudiandae ea quod labore fugiat provident cupiditate voluptatem quaerat quas illo dolorem? Veritatis veniam ratione et pariatur error eius eveniet voluptatibus velit, laudantium quam. Velit, eum. Ipsam sit eligendi at, accusamus ducimus assumenda expedita deleniti corporis placeat quod animi aliquid, rem molestias cumque temporibus facere debitis aut reiciendis illum iusto laboriosam molestiae provident veniam distinctio? Asperiores est praesentium dolorem distinctio. Vero accusantium quasi maxime porro possimus id modi eius voluptates quisquam sint amet a, natus voluptatum quidem blanditiis odio itaque fugiat animi nemo. Nostrum, veniam corporis? Quae eveniet tempore delectus neque, accusantium quis perferendis aut asperiores est ducimus soluta amet architecto? Et facere obcaecati recusandae laboriosam alias quisquam quis, id impedit ipsa dolore, iste reprehenderit quas voluptate quo. Eveniet ut ullam magni dolores. Animi, consequatur qui? Iste assumenda porro, sit impedit id quasi ea possimus atque ullam exercitationem excepturi illo hic voluptatum sapiente, harum maxime, sint quibusdam cupiditate? Mollitia labore voluptate debitis repudiandae vel similique, perspiciatis commodi non, officiis ipsa assumenda nam. Dignissimos hic enim voluptatibus exercitationem sint id, quos quaerat nisi cumque quidem officia aspernatur, porro in autem voluptatum doloribus. Possimus maxime non illum. Quo et accusantium laudantium ipsam sunt doloribus porro necessitatibus voluptatum, omnis vero impedit reprehenderit, dolore iure doloremque!
             </div>
@@ -77,5 +72,8 @@
         </div>
     </div>
     <!-- /App -->
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="js/scipt.js"></script>
 </body>
 </html>
