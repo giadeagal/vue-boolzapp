@@ -12,9 +12,19 @@ const app = new Vue({
                     status: 'sent'
                 },
                 {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Allora abbassale',
+                    status: 'received'
+                },
+                {
                     date: '10/01/2020 15:50:00',
                     text: 'Una mortalità eccessiva che colpisca per asfissia finanziaria anche aziende che avrebbero il potenziale per tornare a prosperare dopo la crisi è uno dei gravi rischi per la nostra economia.',
                     status: "sent"
+                },
+                {
+                    date: '10/01/2020 15:30:55',
+                    text: 'Ma scusa che c\'entra, non mi stavi parlando di tasse?',
+                    status: 'received'
                 },
                 {
                     date:"10/01/2020 15:50:32",
@@ -50,9 +60,19 @@ const app = new Vue({
                         status: 'sent'
                     },
                     {
+                        date: '10/01/2020 15:30:55',
+                        text: 'Allora abbassale',
+                        status: 'received'
+                    },
+                    {
                         date: '10/01/2020 15:50:00',
                         text: 'Una mortalità eccessiva che colpisca per asfissia finanziaria anche aziende che avrebbero il potenziale per tornare a prosperare dopo la crisi è uno dei gravi rischi per la nostra economia.',
                         status: "sent"
+                    },
+                    {
+                        date: '10/01/2020 15:30:55',
+                        text: 'Ma scusa che c\'entra, non mi stavi parlando di tasse?',
+                        status: 'received'
                     },
                     {
                         date:"10/01/2020 15:50:32",
@@ -87,14 +107,29 @@ const app = new Vue({
                         status: 'sent'
                     },
                     {
+                        date: '10/01/2020 15:40:10',
+                        text: 'Ciao Angela, purtroppo non parlo tedesco',
+                        status: "received"
+                    },
+                    {
                         date: '10/01/2020 15:50:00',
                         text: 'Nicht die Welt muss dem Iran nachweisen, dass er eine Bombe baut, sondern der Iran muss die Welt überzeugen, dass er die Atombombe nicht will.',
                         status: "sent"
                     },
                     {
+                        date: '10/01/2020 15:50:10',
+                        text: 'I don\'t speak German, Angela',
+                        status: "received"
+                    },
+                    {
                         date:"10/01/2020 15:50:32",
                         text:"Ist mir egal, ob ich schuld am Zustrom der Flüchtlinge bin, nun sind sie halt da.",
                         status: 'sent'
+                    },
+                    {
+                        date: '10/01/2020 15:55:10',
+                        text: '...',
+                        status: "received"
                     }
                 ]
             },
@@ -109,9 +144,19 @@ const app = new Vue({
                         status: 'sent'
                     },
                     {
+                        date: '10/01/2020 15:40:10',
+                        text: 'agreed',
+                        status: "received"
+                    },
+                    {
                         date: '10/01/2020 15:50:00',
                         text: 'Se iniziamo a parlare del prezzo di un migrante, è una vergogna per tutti. … Non parliamo di mercati, non parliamo di tappeti o di merci. Parliamo di essere umani.',
                         status: "sent"
+                    },
+                    {
+                        date: '10/01/2020 15:50:10',
+                        text: 'conosci l\'italiano! 😍',
+                        status: "received"
                     },
                     {
                         date:"10/01/2020 15:50:32",
@@ -156,6 +201,11 @@ const app = new Vue({
                         status: 'sent'
                     },
                     {
+                        date: '10/01/2020 17:37:25',
+                        text: 'Cringe',
+                        status: 'received'
+                    },
+                    {
                         date: '11/01/2020 00:01:03',
                         text: 'Déléguer notre alimentation, notre protection, notre capacité à soigner notre cadre de vie au fond à d\'autres est une folie. Nous devons en reprendre le contrôle, construire plus encore que nous ne le faisons déjà une France, une Europe souveraine, une France et une Europe qui tiennent fermement leur destin en main. ',
                         status: 'sent'
@@ -186,6 +236,11 @@ const app = new Vue({
                         date: '10/01/2020 16:00:26',
                         text: 'We weten uit het Romeinse Rijk: als je je buitengrenzen niet bewaakt, is dat het begin van het einde.',
                         status: 'sent'
+                    },
+                    {
+                        date: '10/01/2020 16:04:26',
+                        text: 'Please delete my number',
+                        status: 'received'
                     }
                 ]
             },
@@ -208,6 +263,11 @@ const app = new Vue({
                         date:"10/01/2020 15:50:32",
                         text:"Belgium is a safe country.",
                         status: 'sent'
+                    },
+                    {
+                        date:"10/01/2020 15:50:40",
+                        text:"ok",
+                        status: 'received'
                     },
                     {
                         date: '10/01/2020 15:56:00',
