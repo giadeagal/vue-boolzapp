@@ -1,6 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
+        toCheck:"",
         target:{
             name: "Mario Draghi",
             avatar: "../img/mario-draghi-1.jpg",
@@ -294,11 +295,18 @@ const app = new Vue({
         },
         sendText: function() {
             this.target.messages.push({
-                date:"11/11/01 11:11",
+                date: dayjs(),
                 text: newText.value,
                 status: "received"
             });
             newText.value = "";
+        },
+        lookFor: function() {
+            if (this.contacts.name == this.toCheck) {
+                this.contacts.visible = 1
+            } else {
+                this.contacts.visible = 0
+            }
         }
     } 
   }

@@ -193,7 +193,17 @@ span > span {
 }
 
 #app-right-text {
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#app-right-text > i {
+    font-size: 2rem;
+}
+
+#app-right-text > input {
+    font-size: 1.3rem;
+    width: 60%;
 }
 
 .sent,
@@ -215,4 +225,18 @@ span > span {
     background-color: beige;
     float:right ;
     clear:both;
+}
+
+.visible {
+    display: inline-block;
+}
+
+.invisible {
+    display: none;
+}
+
+small {
+    float:right;
+    padding: 1rem 0 0 .3rem;
+    color: grey;
 }

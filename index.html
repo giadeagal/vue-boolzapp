@@ -40,11 +40,11 @@
             </div>
             <div id="app-left-search">
                 <label for="cerca"><i class="fas fa-search"></i></label>
-                <input type="text" id="cerca" placeholder="Cerca o inizia una nuova chat">
+                <input type="text" id="cerca" placeholder="Cerca o inizia una nuova chat" @change="lookFor()">
             </div>
             <div id="app-left-contacts">
                 <ul>
-                    <li v-for="contact in contacts" @click="selectTarget(contact)">
+                    <li v-for="contact in contacts" @click="selectTarget(contact)" :class="(visible == true)? 'visible' : 'invisible'">
                         <img :src="contact.avatar" :alt="contact.name">
                         <span>{{contact.name}}</span>
                     </li>
@@ -67,7 +67,7 @@
              </div>
             <div id="app-right-convo">
                 <div id="texts-container">
-                   <div v-for="message in target.messages" :class="message.status">{{message.text}}</div>
+                   <div v-for="message in target.messages" :class="message.status">{{message.text}} <small>{{message.date}}</small></div>
                 </div>
             </div>
             <div id="app-right-text">
@@ -80,6 +80,7 @@
     <!-- /App -->
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="js/scipt.js"></script>
 </body>
 </html>
