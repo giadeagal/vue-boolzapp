@@ -289,9 +289,17 @@ const app = new Vue({
         ]
     }, 
     methods : {
-        selectTarget: function (x) {
+        selectTarget: function(x) {
             this.target=x;
-        } 
+        },
+        sendText: function() {
+            this.target.messages.push({
+                date:"11/11/01 11:11",
+                text: newText.value,
+                status: "received"
+            });
+            newText.value = "";
+        }
     } 
   }
   )

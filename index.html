@@ -70,7 +70,11 @@
                    <div v-for="message in target.messages" :class="message.status">{{message.text}}</div>
                 </div>
             </div>
-            <div id="app-right-text"></div>
+            <div id="app-right-text">
+                <i class="far fa-smile"></i>
+                <input id="newText" placeholder="Invia un messaggio" @keyup.enter="sendText()">
+                <i class="fas fa-microphone"></i>
+            </div>
         </div>
     </div>
     <!-- /App -->

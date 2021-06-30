@@ -192,6 +192,10 @@ span > span {
     margin:auto;
 }
 
+#app-right-text {
+    justify-content: space-between;
+}
+
 .sent,
 .received {
     padding: 1.3rem;
