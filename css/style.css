@@ -186,3 +186,29 @@ span > span {
     background-repeat: repeat;
 }
 
+#texts-container {
+    width: 90%;
+    height: 100%;
+    margin:auto;
+}
+
+.sent,
+.received {
+    padding: 1.3rem;
+    border-radius: 12px;
+    max-width: 60%;
+    overflow-wrap: break-word;
+    margin: .5rem 0;
+}
+
+.sent {
+    background-color: #dcf8c8;
+    float: left;
+    clear:both;
+}
+
+.received {
+    background-color: #f7f7f6;
+    float:right ;
+    clear:both;
+}
