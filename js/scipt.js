@@ -1,7 +1,7 @@
 const app = new Vue({
     el: '#app',
     data: {
-        toCheck:"",
+        cerca: "",
         target:{
             name: "Mario Draghi",
             avatar: "../img/mario-draghi-1.jpg",
@@ -300,16 +300,25 @@ const app = new Vue({
                 status: "received"
             });
             newText.value = "";
+
+            setTimeout(function(){ 
+                app.target.messages.push({
+                date: dayjs(),
+                text: "ok",
+                status: "sent"
+            }); 
+            }, 1000);
         },
-        lookFor: function() {
-            if (this.contacts.name == this.toCheck) {
-                this.contacts.visible = 1
-            } else {
-                this.contacts.visible = 0
-            }
+        filterList() {
+            contacts = filteredList();
+          }
+    }, 
+    computed: {
+        filteredList() {
+          return this.contacts.filter(contact => {
+            return contact.name.toLowerCase().includes(this.cerca.toLowerCase())
+          })
         }
-    } 
+      }
   }
   )
-
-
